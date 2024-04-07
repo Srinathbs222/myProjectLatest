@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --coverage",
+    "test:e2e": "cypress run"
   },
   "dependencies": {
     "next": "14.1.4",
