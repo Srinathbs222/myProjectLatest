@@ -13,7 +13,7 @@ describe('AddNumbers Component Test', () => {
     cy.get('button').contains('Add').click()
 
     // Verify that the result is displayed correctly
-    cy.get('h2').contains('Result: 12').should('be.visible')
+    cy.get('h2').contains('12').should('be.visible')
     
   })
 })

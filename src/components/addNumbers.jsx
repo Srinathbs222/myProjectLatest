@@ -36,7 +36,7 @@ export const AddNumbers = () => {
             >
                 Add
             </button>
-            <div className="m-2">{result}</div>
+            <h2 className="m-2">{result}</h2>
         </div>
     );
 }
