@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build-and-test:
@@ -28,6 +28,9 @@ jobs:
 
       - name: Run unit tests
         run: npm run test
+
+      - name: Run e2e tests
+        run: npx start-server-and-test start http://localhost:3000 test:e2e
 
       - name: Build the app
         run: npm run build
